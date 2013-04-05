@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01" 
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout 
+        android:background="#ffffffff" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+        
+        <ListView
+        android:id="@+id/mylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <ImageView 
+            android:id="@+id/obubanner" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:src="@drawable/bannera" 
+            android:scaleType="fitXY" 
+            android:adjustViewBounds="true" >
+            </ImageView>
+            </ListView>
+    </RelativeLayout>
+</ScrollView>

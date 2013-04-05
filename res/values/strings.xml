@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Oklahoma Baptist University</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="About">About</string>
+    <string name="academic_button">Academics Calendar</string>
+    <string name="chapel_button">Chapels Schedule</string>
+    <string name="finals_button">Finals Schedule</string>
+    <string name="contact">Contact Me</string>
+    <string name="banner_button">Banner</string>
+    <string name="moodle_button">Moodlerooms</string>
+    <string name="email_button">Email</string>
+    <string name="jupiter_button">Jupiter Grades</string>
+    <string name="staff_button">Staff Directory</string>
+    <string name="calendar_button">Calendars</string>
+    <string name="athletics_button">Athletics</string>
+    <string name="news_button">News</string>
+
+</resources>

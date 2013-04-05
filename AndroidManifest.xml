@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.obu.andrew"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".CurrentStudents" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Majors" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".ProspectiveStudents" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".About" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Contact" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Newswebview" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Athleticswebview" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Staffwebview" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Jupiterwebview" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Moodlewebview" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Emailwebview" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Bannerwebview" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Calendar" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Chapelswebview" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Academicswebview" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Finalswebactivity" />
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name="com.obu.andrew.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

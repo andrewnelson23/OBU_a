@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="cstudents_array">
+        <item
+            >Banner</item>
+        <item
+            >Email</item>
+        <item
+            >Moodle Rooms</item>
+        <item
+            >Jupiter Grades</item>
+        <item
+            >Staff Directory</item>
+        <item
+            >Calendar</item>
+        <item
+            >Athletics</item>
+        <item
+            >News</item>
+    </string-array>
+</resources>
