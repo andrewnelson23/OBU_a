@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:screenOrientation="portrait" 
+    android:background="#ffffffff" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <ImageView 
+            android:id="@+id/obubanner" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:src="@drawable/bannera" 
+            android:scaleType="fitXY" 
+            android:adjustViewBounds="true" >
+            </ImageView>
+  <TextView 
+      android:id="@+id/disclaimer"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" 
+      android:text="@string/Disclaimer"
+      android:textColor="@android:color/black"
+      android:layout_below="@id/obubanner"/>
+    <Button 
+        android:id="@+id/BFirefoxButton" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="@string/Go_to_Banner" 
+        android:layout_below="@id/disclaimer"/>
+    </RelativeLayout>

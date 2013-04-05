@@ -13,6 +13,6 @@ public class About extends Activity
     super.onCreate(savedInstanceState);
     setContentView(R.layout.about);
     tv = (TextView)findViewById(R.id.about);
-    tv.setText("Hello! Thank you for using this OBU app.  This is developed by Andrew C. Nelson. Please understand that I just started developing, and this is kind of a learning process for me.  I think I will use this app simply because of the functionality it provides and convenience, and I hope you do too.  I hope you enjoy the app. :)");
+    tv.setText("School: Oklahoma Baptist University\n\nDeveloper: Andrew Nelson\n\nVersion: 3.0\n\n");
   }
 }

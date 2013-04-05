@@ -18,6 +18,18 @@
         
         <activity 
             android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Bannerdisclaimer" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Applywebview" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Infowebview" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:name=".Visitwebview" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar" 
             android:name=".CurrentStudents" />
         <activity 
             android:theme="@android:style/Theme.NoTitleBar" 

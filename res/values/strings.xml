@@ -17,5 +17,7 @@
     <string name="calendar_button">Calendars</string>
     <string name="athletics_button">Athletics</string>
     <string name="news_button">News</string>
+    <string name="Disclaimer">Hello! Banner will only work on the Firefox Mobile Browser.  I am sorry for the inconvenience, but this is the webpage security check, and it appears impossible to spoof in the normal browser.</string>
+    <string name="Go_to_Banner">Go to Banner</string>
 
 </resources>

@@ -13,6 +13,6 @@ public class Contact extends Activity
     super.onCreate(savedInstanceState);
     setContentView(R.layout.contact);
     this.tv = (TextView)findViewById(R.id.contact);
-    this.tv.setText("You can contact me through a couple of ways. \n\nEmail me: andrew.nelson@okbu.edu \n\nFind me on Facebook at https://www.facebook.com/andrew.c.nelson23");
+    this.tv.setText("\nEmail me: andrew.nelson@okbu.edu \n\nFind me on Facebook at https://www.facebook.com/andrew.c.nelson23");
   }
 }

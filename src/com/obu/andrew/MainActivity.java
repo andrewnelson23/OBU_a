@@ -2,11 +2,14 @@ package com.obu.andrew;
 
 import android.app.TabActivity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.TabHost;
+import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabHost.TabSpec;
 
 public class MainActivity extends TabActivity {
+    
 	
   public void onCreate(Bundle savedInstanceState)
   
@@ -21,17 +24,36 @@ public class MainActivity extends TabActivity {
     cstudents.setContent(cstudentsIntent);
     
     TabSpec prospects = tabHost.newTabSpec("Prospectives");
-    prospects.setIndicator("Prospects");
+    prospects.setIndicator("Prospectives");
     Intent prospectsIntent = new Intent(this, ProspectiveStudents.class);
     prospects.setContent(prospectsIntent);
     
-    TabSpec majors = tabHost.newTabSpec("Majors");
-    majors.setIndicator("Majors");
-    Intent majorsIntent = new Intent(this, Majors.class);
-    majors.setContent(majorsIntent);
-    
     tabHost.addTab(cstudents);
     tabHost.addTab(prospects);
-    tabHost.addTab(majors);
+    
+    tabHost.getTabWidget().getChildAt(0).setBackgroundColor(Color.BLACK);
+    tabHost.getTabWidget().getChildAt(1).setBackgroundColor(Color.BLACK);  
+  
+    
+    tabHost.setOnTabChangedListener(new OnTabChangeListener() {
+
+        @Override
+        public void onTabChanged(String arg0) {
+        	TabHost tabHost = getTabHost();
+
+            setTabColor(tabHost);
+        }
+         });
+         setTabColor(tabHost);
   }
+  public void setTabColor(TabHost tabhost) {
+
+	    for(int i=0;i<tabhost.getTabWidget().getChildCount();i++)
+	        tabhost.getTabWidget().getChildAt(i).setBackgroundColor(Color.BLACK); //unselected
+
+	    if(tabhost.getCurrentTab()==0)
+	           tabhost.getTabWidget().getChildAt(tabhost.getCurrentTab()).setBackgroundColor(Color.rgb(34, 34, 34)); //1st tab selected
+	    else
+	           tabhost.getTabWidget().getChildAt(tabhost.getCurrentTab()).setBackgroundColor(Color.rgb(34, 34, 34)); //2nd tab selected
+	}
 }

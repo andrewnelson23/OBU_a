@@ -9,6 +9,7 @@ import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -64,48 +65,52 @@ public class CurrentStudents extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);        
         String[] choose = getResources().getStringArray(R.array.cstudents_array);
-        setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, choose));
-		ListView lv = getListView();
+        ListView lv = getListView();
+		LayoutInflater lf;
+        View headerView;
+        lf = this.getLayoutInflater();
+        headerView = (View)lf.inflate(R.layout.cstudents, null, false);
+
+		lv.addHeaderView(headerView, null, false);
 		lv.setTextFilterEnabled(true);
+		lv.setBackgroundColor(Color.WHITE);
+		setListAdapter(new ArrayAdapter<String>(this, R.layout.list_content, choose));
 		}
 		
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
-	    switch(position) {
-	        case '0' :     
-	            Intent intent = new Intent(this, Bannerwebview.class);
-	            startActivity(intent);
+		Intent intent;
+		switch(position) {
+	    	default:
+	        case 0 :     
+	            intent = new Intent(this, Bannerdisclaimer.class);
 	            break;
-	        case '1' :          
-	        	Intent intent1 = new Intent(this, Emailwebview.class);
-	            startActivity(intent1);
+	        case 2 :          
+	        	intent = new Intent(this, Emailwebview.class);
 	            break;
-	        case '2' :
-	        	Intent intent2 = new Intent(this, Moodlewebview.class);
-	            startActivity(intent2);
+	        case 3 :
+	        	intent = new Intent(this, Moodlewebview.class);
 	            break;
-	        case '3' :
-	        	Intent intent3 = new Intent(this, Jupiterwebview.class);
-	            startActivity(intent3);
+	        case 4 :
+	        	intent = new Intent(this, Jupiterwebview.class);
 	            break;
-	        case '4' :
-	        	Intent intent4 = new Intent(this, Staffwebview.class);
-	            startActivity(intent4);
+	        case 5 :
+	        	intent = new Intent(this, Staffwebview.class);
 	            break;
-	        case '5' :
-	        	Intent intent5 = new Intent(this, Calendar.class);
-	            startActivity(intent5);
+	        case 6 :
+	        	intent = new Intent(this, Calendar.class);
 	            break;
-	        case '6' :
-	        	Intent intent6 = new Intent(this, Athleticswebview.class);
-	            startActivity(intent6);
+	        case 7 :
+	        	intent = new Intent(this, Athleticswebview.class);
 	            break;
-	        case '7' :
-	        	Intent intent7 = new Intent(this, Newswebview.class);
+	        case 8 :
+	        	intent = new Intent(this, Newswebview.class);
 	            //intent7.putExtra("KEY_SELECTED_INDEX", position);
-	            startActivity(intent7);
+	            //startActivity(intent7);
 	            break;
 	    }
+		
+		startActivity(intent);
 	};
 }
 		
